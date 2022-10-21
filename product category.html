@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+     class="rel">
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+      /* <!--NAVBAR START--> */
+      * {
+	font-family: 'Montserrat', sans-serif;
+}
+.bg-light {
+	background-color: transparent !important;
+}
+.navbar-nav a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #00f7ff;
+}
+.navbar-logo-centered .navbar-nav .nav-link{
+    padding: .5em 1em;
+}
+      ul > li{
+        padding: 0 40px 0 10px;
+      }
+      .header{
+        background-color:black;
+        height: 60px;
+      }
+      ul > a > img{
+        height: 60px;
+        padding: 10px;
+        margin-left: auto;
+      }
+
+     .d-block{
+        height: 525px;  
+     }
+
+  /* <!--NAVBAR END--> */
+
+        /* <!--PRODUCT CATEGORY START--> */
+     .border-bottom{
+      font-family: 'Ibarra Real Nova', serif;
+      text-align: center;
+      
+    }
+     .products{
+       font-size: 90px;
+       margin-left: 210px;
+     }
+     .product{
+        /* background-color: #212121; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 40px;
+       }
+       .container {
+        background-color: black;
+        display: inline-block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 16px;
+        margin: 10px;
+        max-width: 315px;
+        min-width: 230px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        margin-right: 90px;
+       }
+       .container *{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition:all 0.35s ease;
+        transition: all 0.35s ease;
+       }
+       .container h3{
+        background-color: #000;
+        border: 2px solid ;
+        color: #fff;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0;
+        padding: 5px 10px;
+        text-transform:uppercase;
+       }
+       .container::before,
+       .container::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-transition:all 0.35s ease;
+        transition: all 0.35s ease;
+        background: #000;
+        border-left: 3px solid #fff;
+        border-right: 3px solid #fff;
+        content: '';
+        opacity: 0.9;
+        z-index: 1;
+       }
+       .container::before{
+        -webkit-transform: skew(45deg) translateX(-155%);
+        transform: skew(45deg) translateX(-155%);
+       }
+       .container::after{
+        -webkit-transform: skew(45deg) translateX(-155%);
+        transform: skew(45deg) translateX(-155%);
+       }
+       .container img{
+        backface-visibility: hidden;
+        max-width: 100%;
+        vertical-align: top;
+       }
+        .container figcaption{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        z-index: 2;
+        -webkit-transform:translate (-50%,-50%) scale(0.5);
+        transform:translate (-50%,-50%) scale(0.5);
+        opacity: 0;
+        -webkit-box-shadow:0 0 10px #000 ;
+        box-shadow:0 0 10px #000 ; 
+    }
+    .container a{
+        position: absolute;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        z-index:3;
+    }
+    .container:hover img{
+        opacity: 0.5;
+    }
+    .container:hover::before,
+    .container.hover::before {
+        transform: skew(45deg) translateX(-55%);
+       -webkit-transform: skew(45deg) translateX(-55%);
+    } 
+    .container:hover::after,
+    .container.hover::after {
+        transform: skew(45deg) translateX(55%);
+       -webkit-transform: skew(45deg) translateX(55%);
+    } 
+
+    .container:hover figcaption,
+    .container:hover figcaption {
+    -webkit-transform:translateX(-55%, -55%) scale(1);
+    transform:translateX(-55%, -55%) scale(1);
+    opacity: 1;
+    } 
+    .h{
+            background: linear-gradient(to right,black);
+            line-height: 3px;
+        }
+    
+    .border-bottom{
+      font-family: 'Ibarra Real Nova', serif;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* <!--PRODUCT CATEGORY END--> */
+
+/* <!--FOOTER START--> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+footer{
+    width: 100vw;
+}
+footer .foot-main{
+    
+    background: #005f99;
+    display: flex;
+    justify-content: space-between;
+    flex: 25%;
+    flex-wrap: wrap;
+    
+
+
+}
+.foot-row{
+    padding: 20px 40px;
+    margin: 20px;
+
+
+}
+.foot-row h4{
+    color: rgb(240, 230, 230);
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    position: relative;
+    text-transform: uppercase;    
+    
+}
+.foot-row h4::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -10px;
+    background-color: #e91e63;
+    width: 50px;
+    height: 2px;
+
+}
+/* .foot-row ul{
+    
+} */
+.foot-row li{
+    list-style: none;
+    margin: 15px 0;
+}
+.foot-row ul li a{
+    color: rgb(177, 173, 173);
+    text-decoration: none;
+    font-weight: 300;
+    display: block; 
+    transition: all 0.3s ease;
+
+}
+.foot-row ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+/* .social-icon ul{
+    
+} */
+.social-icon ul li{
+    list-style: none;
+    display: inline-block;
+    background: white;
+    border-radius: 50%;
+
+}
+.social-icon ul li i{
+    color: black;
+    margin: 5px;
+    display: block; 
+    transition: all 0.3s ease;
+    
+}
+.social-icon ul li i:hover{
+    color: rgba(158, 154, 154, 0.788);
+    padding-left: 10px;
+}   
+
+@media(max-width: 768px){
+    footer .foot-main{
+        width: 100%;    
+        margin-bottom: 30px;
+        
+} }
+
+/* <!--FOOTER END--> */
+
+
+</style>
+</head>
+<body>
+     <!--HEADER START-->
+
+      <!-- <div class="header container-fluid m-auto">
+    <img class="logo" src="images/logo.png" alt="">
+      </div> -->
+      <nav class="navbar navbar-expand-lg bg-dark">
+
+        <ul class="navbar-nav mx-auto">
+          
+          <a href="#"><img src="./images/logo.png"></a>
+
+        </ul>
+
+    </nav>
+    <!--HEADER START-->
+    
+<!--NAVBAR START-->  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: auto;top: -66px;position: relative;background-color: rgba(255, 255, 255, 0);">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="fas fa-align-justify" style="color: white;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Our Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Calenders</a></li>
+            <li><a class="dropdown-item" href="#">Diaries</a></li>
+            <li><a class="dropdown-item" href="#">Stationaries</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+<!--NAVBAR END-->
+
+    <!-- PRODUCT CATEGORY START-->
+  <h2 class="border-bottom pb-2 mx-auto text-center" style="font-size: 40px;">Product Categories</h2>
+  <div class="product">
+    <div class="fig"></div>
+    <figure class="container">
+        <img src="images/product1.PNG" alt="">
+        <figcaption>
+            <h3>Shop Now</h3>
+            <a href=""></a>
+        </figcaption>
+    </figure>
+    <figure class="container">
+        <img src="images/product2.PNG" alt="">
+        <figcaption>
+            <h3>Shop Now</h3>
+            <a href=""></a>
+        </figcaption>
+    </figure>
+    <figure class="container">
+        <img src="images/product3.PNG" alt="">
+        <figcaption>
+            <h3>Shop Now</h3>
+            <a href=""></a>
+        </figcaption>
+    </figure>
+</div>
+  <!--PRODUCT CATEGORY END -->
+  <!--FOOTER START -->
+ <footer class="foot-col">
+  <div class="foot-main">
+      <div class="foot-row">
+          <h4>Company</h4>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="foot-row">
+          <h4>Get help</h4>
+          <ul>
+              <li><a href="#">Track order</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">Payment</a></li>
+              <li><a href="#">Shipping</a></li>
+          </ul>
+      </div>
+      <div class="foot-row">
+          <h4>Online shop</h4>
+          <ul>
+              <li><a href="#">Calenders</a></li>
+              <li><a href="#">Diary</a></li>
+              <li><a href="#">Stationary</a></li>
+              <li><a href="#">Journal</a></li>
+          </ul>
+      </div>
+      <div class="foot-row">
+          <div class="social-icon">
+          <h4>Connect</h4>
+          <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-google-plus-g"></i></li>
+          </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+<!--FOOTER END-->
+</body>
+</html>
